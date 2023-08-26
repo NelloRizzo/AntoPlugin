@@ -9,7 +9,7 @@ import java.util.stream.Stream;
 public class FileRepository<T extends Serializable> implements Repository<T> {
     private final String fileName;
 
-    private Set<T> items = null;
+    private Set<T> items = new HashSet<>();
 
     public FileRepository(String fileName) {
         this.fileName = fileName;
