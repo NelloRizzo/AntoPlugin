@@ -8,6 +8,7 @@ public final class AntoPlugin extends JavaPlugin {
     public void onEnable() {
         // Plugin startup logic
 
+        // this.database = getFromDatabase
     }
 
     @Override
