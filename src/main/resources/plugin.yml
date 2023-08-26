@@ -1,0 +1,4 @@
+name: AntoPlugin
+version: '${project.version}'
+main: io.github.iamantoo.antoplugin.AntoPlugin
+api-version: '1.20'
