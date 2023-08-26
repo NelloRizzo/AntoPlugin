@@ -1,8 +1,9 @@
 package io.github.iamantoo.antoplugin.data.entities;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class AntoTest {
+public class AntoTest implements Serializable {
     private String name;
 
     public AntoTest(String name) {

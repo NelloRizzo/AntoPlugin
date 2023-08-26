@@ -1,11 +1,12 @@
 package io.github.iamantoo.antoplugin.data.entities;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 import java.util.UUID;
 
-public class AntoPlayer {
+public class AntoPlayer implements Serializable {
     // il player puo avere tante vite
     // ogni vita ha nome e cognome
 

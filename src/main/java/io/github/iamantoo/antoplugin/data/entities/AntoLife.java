@@ -2,12 +2,13 @@ package io.github.iamantoo.antoplugin.data.entities;
 
 import org.joml.Vector3d;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 import java.util.UUID;
 
-public class AntoLife {
+public class AntoLife implements Serializable {
     private String name;
     private String surname;
     private String birthDate;

@@ -1,10 +1,11 @@
 package io.github.iamantoo.antoplugin.data.entities;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 import java.util.Objects;
 
-public class AntoTestResult {
+public class AntoTestResult implements Serializable {
     private AntoTest test;
     private Date executionDate;
     private boolean result;
