@@ -9,8 +9,5 @@
         <module name="AntoPlugin" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="AntoPlugin" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>
