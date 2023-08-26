@@ -14,6 +14,7 @@ public class AntoPlayer implements Serializable {
     private AntoLife lifeUserIsLiving;
     private UUID player;
     private boolean isFrozen;
+    private boolean loggingInFirstTime;
 
     public AntoPlayer() {
     }
@@ -54,6 +55,14 @@ public class AntoPlayer implements Serializable {
 
     public void setFrozen(boolean frozen) {
         isFrozen = frozen;
+    }
+
+    public boolean isLoggingInFirstTime() {
+        return loggingInFirstTime;
+    }
+
+    public void setLoggingInFirstTime(boolean loggingInFirstTime) {
+        this.loggingInFirstTime = loggingInFirstTime;
     }
 
     @Override
