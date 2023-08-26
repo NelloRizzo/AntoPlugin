@@ -4,6 +4,7 @@ import java.io.*;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.UUID;
+import java.util.stream.Stream;
 
 public class FileRepository<T extends Serializable> implements Repository<T> {
     private final String fileName;
@@ -48,8 +49,8 @@ public class FileRepository<T extends Serializable> implements Repository<T> {
     }
 
     @Override
-    public Iterable<T> readAll() {
-        return items.stream().toList();
+    public Stream<T> readAll() {
+        return items.stream();
     }
 
     @Override
