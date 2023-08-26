@@ -3,6 +3,7 @@ package io.github.iamantoo.antoplugin;
 import io.github.iamantoo.antoplugin.data.entities.AntoPlayer;
 import io.github.iamantoo.antoplugin.data.repositories.FileRepository;
 import io.github.iamantoo.antoplugin.data.repositories.Repository;
+import io.github.iamantoo.antoplugin.login.listeners.PlayerJoinListener;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -22,6 +23,8 @@ public final class AntoPlugin extends JavaPlugin {
         // Plugin startup logic
 
         // this.database = getFromDatabase
+
+        Bukkit.getServer().getPluginManager().registerEvents(new PlayerJoinListener(this), this);
     }
 
     @Override
